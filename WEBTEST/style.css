@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+    background-color: #131319;
+    color: #ffffff;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+section{ 
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos{
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+
+}
+
+.logo:nth-child(3){
+    transition-delay: 400ms;
+
+}
+
+.logo:nth-child(4){
+    transition-delay: 600ms;
+}
+
+button {
+    border: 1px solid white;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0.24rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pindot {
+    align-items: center;
+    position: relative;
+}
+
+button:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.discord-icon{
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid white;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(0%);
+    border-radius: 0.24rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+a:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+h6{
+  text-align: center;  
+}
+
+.About{
+    padding: 20px;
+}
+.music {
+    align-items: center;
+    padding-left: 20%;
+}
